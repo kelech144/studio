@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitap: https://studio.kelech.me/sitemap.xml
