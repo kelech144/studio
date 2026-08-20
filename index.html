@@ -9,7 +9,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=theme-color content=#0A0A0A>
 <meta name=author content=KELECH>
-<title>KELECH — Creative Web Design & Branding Agency</title>
+<title>KELECH | Creative Web Design & Branding Agency</title>
 <meta name=description content="KELECH creates modern websites, branding and digital experiences beyond limits for businesses and creators.">
 <meta name=keywords content="website design, web development, branding, graphic design, UI UX design, creative agency, Lagos web designer, Nigeria branding agency">
 <link rel=canonical href=https://studio.kelech.me>
@@ -34,18 +34,18 @@
 <div class=logo>
 
 <div class=logo-text>
-KELECH
+KELECH<span>.</span>
 </div>
 </div>
 <div class="nav-links reveal">
-<a href=/ class=active>Home</a>
-<a href=/about>About</a>
+<a href="https://studio.kelech.me" class=active>Home</a>
+<a href="/about">About</a>
 <a href=/service>Services</a>
 <a href=/work>Work</a>
-<a href=team>Team</a>
+<a href=/team>Team</a>
 <a href=/contact>Contact</a>
 </div>
-<a href="/contact.html reveal" class=nav-btn>
+<a class=nav-btn onclick="openModal('')">
 START A PROJECT
 </a>
 <button class=menu-btn><i class=ri-menu-3-line></i></button>
@@ -67,10 +67,10 @@ BEYOND LIMITS.
 KELECH helps in crafting identities, graphics, and websites for startups, artists, and businesses ready to be seen.
 </p>
 <div class=hero-buttons>
-<a href=/contact.html class=primary-btn>
+<a class=primary-btn onclick="openModal('working with us')">
 WORK WITH US→
 </a>
-<a href=/work.html class=secondary-btn>
+<a href=/work class=secondary-btn>
 SEE THE WORK
 </a>
 </div>
@@ -110,7 +110,7 @@ AVAILABLE • 2026
 <h2>
 FEATURED <span>WORK.</span>
 </h2>
-<a href=/work.html class=view-projects>
+<a href=/work class=view-projects>
 VIEW ALL PROJECTS →
 </a>
 </div>
@@ -161,7 +161,7 @@ VIEW ALL PROJECTS →
 GOT AN IDEA?
 <span>LET'S BUILD IT.</span>
 </h2>
-<a href=/contact.html class="btn btn-primary">
+<a  class="btn btn-primary" onclick="openModal(' ')">
 Start A Project→
 </a>
 </section>
@@ -169,25 +169,64 @@ Start A Project→
 <div class=footer-content>
 <div>
 <div class=logo>
-KELECH
+KELECH<span>.</span>
 </div>
 <p class=copyright>
 Design & Brand Studio • Beyond Limits...
 </p>
 </div>
 <div class=footer-links>
-<a href=index.html>Home</a>
-<a href=/about.html>About</a>
-<a href=/service.html>Services</a>
-<a href=/work.html>Work</a>
-<a href=/team.html>Team</a>
-<a href=/contact.html>Contact</a>
+<a href=/>Home</a>
+<a href=/about>About</a>
+<a href=/service>Services</a>
+<a href=/work>Work</a>
+<a href=/team>Team</a>
+<a href=/contact>Contact</a>
 </div>
 </div>
 <p class=copyright>
 © 2026 KELECH. ALL RIGHTS RESERVED.
 </p>
 </footer>
+
+<div class="modal" id="projectModal">
+
+    <div class="modal-box">
+
+      <button class="close-modal" onclick="closeModal()">
+        ×
+      </button>
+
+      <h2>
+        Start a Project
+      </h2>
+
+      <p id="selectedPackage">
+        Tell me about your project.
+      </p>
+      
+      <input
+        type="text"
+        id="clientName"
+        placeholder="Your name">
+
+      <input
+        type="text"
+        id="businessName"
+        placeholder="Business / Brand name">
+
+      <textarea
+        id="projectMessage"
+        placeholder="Tell me briefly what you need..."></textarea>
+      <a
+        class="btn1"
+        onclick="sendToWhatsApp()">
+        Continue on WhatsApp
+      </a><br><br>
+
+    </div>
+
+  </div>
 <script src=main.js></script>
 </body>
 </html>
